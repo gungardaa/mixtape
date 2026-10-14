@@ -1,0 +1,45 @@
+# deps
+/node_modules
+.pnp
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# next.js
+/.next/
+/out/
+/build
+*.tsbuildinfo
+next-env.d.ts
+
+# env - jangan up secret, contoh tetap up
+.env*
+!.env.example
+
+# supabase local
+supabase/.branches
+supabase/.temp
+
+# docs internal - tidak up ke github / deploy
+design.md
+
+# logs & test
+*.log
+npm-debug.log*
+coverage/
+.nyc_output/
+
+# os & ide
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.swp
+
+# deploy
+.vercel
+.netlify
+.turbo

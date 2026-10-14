@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", "Cascadia Mono", Menlo, Consolas, monospace;
+  --font-display: var(--font-display), "Courier New", monospace;
+  --font-handwritten: var(--font-handwritten), cursive;
+}
+
+:root {
+  color: #171717;
+  background: #b7d9e3;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: #b7d9e3;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: #b7d9e3;
+}
+
+::selection {
+  color: #171717;
+  background: #e8c86a;
+}
+
+iframe {
+  border: 0;
+}
+
+/* Hide scrollbar but allow scroll for long content (many songs) */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
